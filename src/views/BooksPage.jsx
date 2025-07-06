@@ -1,9 +1,6 @@
 import Book from '../components/Book.jsx';
 import Header from '../components/Header.jsx';
-
-function BooksPage() {
-
-  const books = [
+ export  const books = [
     {
       id: 1,
       title: "A Short History of Europe",
@@ -37,6 +34,9 @@ function BooksPage() {
       synopsis: "Shakespeare wrote 154 sonnets published in his 'quarto' in 1609, covering themes such as the passage of time, mortality, love, beauty, infidelity, and jealousy. The first 126 of Shakespeare's sonnets are addressed to a young man, and the last 28 addressed to a woman – a mysterious 'dark lady'."
     }
   ];
+function BooksPage() {
+
+ 
   const pageTitle = "📖 Book List with React Router & Redux Toolkit";
     
     

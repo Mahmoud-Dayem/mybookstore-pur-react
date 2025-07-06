@@ -1,11 +1,11 @@
  
-
+import { NavLink } from "react-router-dom"
 export default function Book({book}) {
     
  
 
   return (
-    <>
+    <NavLink to={`/book/${book.id}`}>
         <div className="book">
             {
                 book.isRead && 
@@ -29,6 +29,6 @@ export default function Book({book}) {
             </div>
         </div>
 
-    </>
+    </NavLink>
   )
 }
