@@ -6,7 +6,7 @@ import { store } from "./store/store";
 import { Provider } from "react-redux";
 export default function App() {
   return (
-    <Provider store={store}>
+     
       <Router>
         <Routes>
           <Route path="/" element={<BooksPage />} />
@@ -14,6 +14,6 @@ export default function App() {
           <Route path="/add" element={<AddBookPage />} />
         </Routes>
       </Router>
-    </Provider>
+ 
   );
 }
