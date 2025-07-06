@@ -1,5 +1,6 @@
 import Header from '../components/Header.jsx';
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 function AddBookPage() {
     const navigate = useNavigate()
     const pageTitle = "Add Book";
@@ -8,6 +9,10 @@ function AddBookPage() {
     alert('book added');
     navigate("/")
    }
+
+   const booksnew = useSelector(state=>state.addbook.books)
+   console.log('xxxxxxxxxxxxxxx',booksnew);
+   
 
     return (
       <>

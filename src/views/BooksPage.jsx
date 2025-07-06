@@ -1,5 +1,6 @@
 import Book from '../components/Book.jsx';
 import Header from '../components/Header.jsx';
+import { useSelector } from 'react-redux';
  export  const books = [
     {
       id: 1,
@@ -38,6 +39,8 @@ function BooksPage() {
 
  
   const pageTitle = "📖 Book List with React Router & Redux Toolkit";
+    const booksfromstore = useSelector(state=>state.addbook.books)
+    console.log('books from store' , booksfromstore );
     
     
     

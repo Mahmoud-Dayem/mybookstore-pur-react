@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counter from './addBook'
+import addbook from './addBook'
 export const store = configureStore({
   reducer: {
-    counter:counter
+    addbook:addbook
   },
 })
